@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      scroll-behavior: smooth;
+    }
+    body{
+      background:linear-gradient(#200016,#10001f);
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    header{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px;
+      position: absolute;
+      width: 97%;
+      z-index: 10;
+    }
+    header h2{
+      font-size: 30px;
+      text-transform:uppercase;
+    }
+    header ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+    }
+    header ul li{
+      margin-right: 30px;
+    }
+    header ul li a{
+      padding: 8px 15px;
+      border-radius: 15px;
+    }
+    header ul li a:hover,.active{
+      background-color: aliceblue;
+      color: black;
+
+    }
+    .main{
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .main::after{
+      position: absolute;
+      content: "";
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+      background:linear-gradient(to top,#200016, transparent);
+    }
+    .main img{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    #moon{
+      mix-blend-mode: screen;
+      transform: translateY(80px);
+    }
+    .logo5ahmed{
+      color: white;
+      text-transform: uppercase;
+      font-size: 25px;
+      transform: translateY(-140px);
+    }
+    .content{
+      color: white;
+      padding: 30px;
+    }
+    .content h2{
+      margin: 30px;
+      font-size: 30px;
+    }
+    .content p{
+      margin: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2> <a class="logo"><a href="">ahmed</a></h2>
+    <ul>
+      <li><a class="active" href="">home</a></li>
+      <li><a href="">product</a></li>
+      <li><a href="">shop</a></li>
+      <li><a href="">about</a></li>
+      <li><a href="">contact</a></li>
+    </ul>
+  </header>
+  <section class="main">
+    <img src="stars1.webp" id="stars" alt="" srcset="">
+    <h2 class="logo5ahmed">ahmed</h2>
+    <img src="moon2.webp" id="moon" alt="" srcset="">
+    <img src="mountains3.webp" id="mountains3" alt="" srcset="">
+    <img src="mountains4.webp" id="mountains4" alt="" srcset="">
+    <img src="river5.webp" id="river" alt="" srcset="">
+    <img src="boat6.webp" id="boat" alt="" srcset="">
+    <img src="mountains7.webp" id="mountains" alt="" srcset="">
+    
+  </section>
+  <section class="content">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, qui odio quasi asperiores maxime cupiditate voluptate, eius voluptatibus culpa facilis nisi itaque consectetur, omnis natus? Quidem itaque molestiae, quam dolores dicta minima fugiat porro dolor odit necessitatibus soluta vitae repellat similique odio quisquam, laudantium et maiores cum veritatis asperiores optio magnam doloribus? Minus omnis blanditiis nisi expedita, repellendus perspiciatis deleniti quibusdam vel ad dolore repudiandae itaque neque accusamus aperiam! Fugiat cumque ad eligendi vero inventore laboriosam qui quibusdam. Aut magni amet nulla voluptatem unde quisquam asperiores repellendus earum officiis laborum, ipsam, debitis minima ab fuga reprehenderit natus, omnis eius. Voluptates!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem debitis. Accusamus 
+      quas hic quam quasi mollitia sunt quo vero nesciunt, dolore incidunt magni, qui aliquam, temporibus dignissimos nulla itaque possimus consequuntur? Quo molestiae asperiores libero, eaque, temporibus inventore debitis enim sed architecto assumenda magnam ipsam error! Velit ex enim iusto quisquam debitis. Adipisci consectetur dolorem repudiandae, perferendis nobis veniam illo corporis earum ipsum numquam beatae fuga reprehenderit inventore molestiae quo, asperiores sapiente soluta deleniti accusamus similique placeat voluptates! Dicta sequi distinctio at, quod temporibus optio harum nostrum fugit rerum non recusandae quas hic enim veniam qui dolor ratione illo!transform: translateY(-140px);</p><br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, autem debitis. Accusamus quas hic quam quasi mollitia sunt quo vero nesciunt, dolore incidunt magni, qui aliquam, temporibus dignissimos nulla itaque possimus consequuntur? Quo molestiae asperiores libero, eaque, temporibus inventore debitis enim sed architecto assumenda magnam ipsam error! Velit ex enim iusto quisquam debitis. Adipisci consectetur dolorem repudiandae, perferendis nobis veniam illo corporis earum ipsum numquam beatae fuga reprehenderit inventore molestiae quo, asperiores sapiente soluta deleniti accusamus similique placeat voluptates! Dicta sequi distinctio at, quod temporibus optio harum nostrum fugit rerum non recusandae quas hic enim veniam qui dolor ratione illo!transform: translateY(-140px);</p><br>
+
+  </section>
+  <script src="moon.js"></script>
+</body>
+</html>
